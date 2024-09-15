@@ -60,14 +60,21 @@ jobs:
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
           cp -f build.md build.tmp
 
+      - name: Extract version number
+        id: extract_version
+        run: |
+          # Extract version from the file name
+          VERSION=$(ls ./build/tiktok-revanced-v*-arm-v7a.apk | head -n 1 | sed -n 's/.*tiktok-revanced-v\([0-9.]*\)-arm.*/\1/p')
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+
       - name: Upload modules to release
         uses: svenstaro/upload-release-action@v2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: ReVanced
-          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
+          release_name: v${{ steps.extract_version.outputs.VERSION }}
+          tag: ${{ steps.extract_version.outputs.VERSION }}
           file_glob: true
           overwrite: true
 

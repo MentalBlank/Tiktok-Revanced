@@ -75,7 +75,6 @@ get_rv_prebuilts() {
 			url=$(jq -e -r '.assets[] | select(.name | endswith("json")) | .url' <<<"$resp") || return 1
 			gh_dl "$file" "$url" >&2 || return 1
 			echo -n "$file "
-			echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"
 		fi
 	done
 	echo

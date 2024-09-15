@@ -1,50 +1,26 @@
-# ReVanced Magisk Module
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
-[![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
+# TikTok - ReVanced (Auto-Build)
 
-Extensive ReVanced builder  
+## Installation:
+1. (If Login Through Google) Download and log in to [GmsCore](https://github.com/ReVanced/GmsCore/releases/latest) / [MicroG-RE](https://github.com/WSTxda/MicroG-RE).
+2. Install the latest version of [Build APK](https://github.com/MentalBlank/Tiktok-Revanced/releases/latest).
+3. Use [Obtainium](https://github.com/ImranR98/Obtainium) to download and install build updates.
 
-Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
+## Patches:
+- Remove download restrictions and change the default download path.
+- Remember the clear display configurations between videos.
+- Show a progress bar for all videos.
+- Enable the playback speed option for all videos and retain speed configurations between videos.
+- Remove ads, livestreams, stories, image videos, and videos with a specific amount of views or likes from the feed.
+- Add ReVanced settings to TikTok.
+- Spoof the information retrieved from the SIM card.
+- Disable login requirement.
+- Fix Google login and allow logging in with a Google account.
 
-Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
+## Disclaimer:
+This patch modifies the original APK, and may violate the app provider's terms of service. Use at your own risk.
 
-<details><summary><big>Features</big></summary>
-<ul>
- <li>Support all present and future ReVanced and <a href="https://github.com/inotia00/revanced-patches">ReVanced Extended</a> apps</li>
- <li> Can build Magisk modules and non-root APKs</li>
- <li> Updated daily with the latest versions of apps and patches</li>
- <li> Optimize APKs and modules for size</li>
- <li> Modules</li>
-    <ul>
-     <li> recompile invalidated odex for faster usage</li>
-     <li> receive updates from Magisk app</li>
-     <li> do not break safetynet or trigger root detections</li>
-     <li> handle installation of the correct version of the stock app and all that</li>
-     <li> support Magisk and KernelSU</li>
-    </ul>
-</ul>
-Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.
-</details>
+## Other Apps:
+[Google Photos](https://github.com/MentalBlank/GPhotos-Revanced) | [YouTube](https://github.com/MentalBlank/YouTube-Revanced) | [FB Messenger](https://github.com/MentalBlank/Messenger-Revanced) | [Reddit](https://github.com/MentalBlank/Reddit-Revanced) | [TikTok](https://github.com/MentalBlank/Tiktok-Revanced)
 
-## To include/exclude patches or patch other apps
-
- * Star the repo :eyes:
- * Use the repo as a [template](https://github.com/new?template_name=revanced-magisk-module&template_owner=j-hc)
- * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
- * Run the build [workflow](../../actions/workflows/build.yml)
- * Grab your modules and APKs from [releases](../../releases)
-
-also see here [`CONFIG.md`](./CONFIG.md)
-
-## Building Locally
-### On Termux
-```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
-```
-
-### On Desktop
-```console
-$ git clone https://github.com/j-hc/revanced-magisk-module
-$ cd revanced-magisk-module
-$ ./build.sh
-```
+## Thanks To:
+[j-hc](https://github.com/j-hc) & [ReVanced](https://github.com/ReVanced)
