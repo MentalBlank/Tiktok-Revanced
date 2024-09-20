@@ -73,8 +73,8 @@ jobs:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: v${{ steps.extract_version.outputs.VERSION }}
-          tag: ${{ steps.extract_version.outputs.VERSION }}
+          release_name: Build ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }} | v${{ steps.extract_version.outputs.VERSION }}
+          tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
           overwrite: true
 
