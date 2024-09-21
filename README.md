@@ -1,19 +1,18 @@
 # TikTok - ReVanced (Auto-Build)
 
 ## Installation:
-1. (If Login Through Google) Download and log in to [GmsCore](https://github.com/ReVanced/GmsCore/releases/latest) / [MicroG-RE](https://github.com/WSTxda/MicroG-RE).
-2. Install the latest version of [Build APK](https://github.com/MentalBlank/Tiktok-Revanced/releases/latest).
-3. Use [Obtainium](https://github.com/ImranR98/Obtainium) to download and install build updates.
+1. Install the latest version of [Build APK](https://github.com/MentalBlank/Tiktok-Revanced/releases/latest).
+2. Use [Obtainium](https://github.com/ImranR98/Obtainium) to download and install build updates.
 
 ## Patches:
 - Remove download restrictions and change the default download path.
 - Remember the clear display configurations between videos.
 - Show a progress bar for all videos.
-- Enable the playback speed option for all videos and retain speed configurations between videos.
+- Enable the playback speed option for all videos and retain speed configurations between videos. (Patch disabled until fixed)
 - Remove ads, livestreams, stories, image videos, and videos with a specific amount of views or likes from the feed.
-- Add ReVanced settings to TikTok.
+- Add ReVanced settings to TikTok. (Patch disabled until fixed)
 - Spoof the information retrieved from the SIM card.
-- Disable login requirement.
+- Disable login requirement. (Patch disabled until fixed)
 - Fix Google login and allow logging in with a Google account.
 
 ## Disclaimer:
