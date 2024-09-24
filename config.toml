@@ -8,6 +8,5 @@ enable-magisk-update = false   # set this to false if you do not want to receive
 [Tiktok]
 apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
 included-patches = "'SIM spoof'"
-excluded-patches = "'Playback speed' 'Settings' 'Disable login requirement'" #Excluded as these patches cause crashes as of Sept 2024. Restoring when fixed in patches repo.
 version = "auto"
 arch = "both"

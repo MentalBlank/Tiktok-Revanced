@@ -8,11 +8,11 @@
 - Remove download restrictions and change the default download path.
 - Remember the clear display configurations between videos.
 - Show a progress bar for all videos.
-- Enable the playback speed option for all videos and retain speed configurations between videos. (Patch disabled until fixed)
+- Enable the playback speed option for all videos and retain speed configurations between videos.
 - Remove ads, livestreams, stories, image videos, and videos with a specific amount of views or likes from the feed.
-- Add ReVanced settings to TikTok. (Patch disabled until fixed)
+- Add ReVanced settings to TikTok.
 - Spoof the information retrieved from the SIM card.
-- Disable login requirement. (Patch disabled until fixed)
+- Disable login requirement.
 - Fix Google login and allow logging in with a Google account.
 
 ## Disclaimer:
